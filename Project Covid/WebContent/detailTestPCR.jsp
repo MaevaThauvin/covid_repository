@@ -56,7 +56,7 @@
 				<div class="col-2 ">
 					<label for="level">Etat :</label>
 				</div>
-				<div class="col-4 ">${ cas.etat }</div>
+				<div class="col-4 "><c:if test="${ cas.etat != 0 }"><c:out value = "${ cas.etat }"/></c:if>$</div>
 			</div>
 
 

@@ -19,14 +19,14 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">ID</span>
   </div>
-  <input type="text" disabled name="id" class="form-control" placeholder="ID" aria-label="id" aria-describedby="basic-addon1">
+  <input type="text" disabled pattern="[A-Ba-B0-9]" name="id" class="form-control" placeholder="ID" aria-label="id" aria-describedby="basic-addon1">
 </div> 
 
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Nom Complet : </span>
   </div>
-  <input type="text" name="nomComplet" class="form-control" placeholder="Nom Complet" value="<c:catch var="exception"></c:catch>
+  <input type="text" pattern="[A-Ba-B0-9]" name="nomComplet" class="form-control" placeholder="Nom Complet" value="<c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${cas.nom_complet }"/></c:if>" aria-label="nomComplet" aria-describedby="basic-addon1">
 <c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${erreur_nomcomplet }"/></c:if>
@@ -37,7 +37,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Adresse : </span>
   </div>
-  <input type="text" name="adresse" class="form-control" placeholder="Adresse" value="<c:catch var="exception"></c:catch>
+  <input type="text" pattern="[A-Ba-B0-9]" name="adresse" class="form-control" placeholder="Adresse" value="<c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${cas.adresse }"/></c:if>" aria-label="Adresse" aria-describedby="basic-addon1">
   <c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${erreur_adresse }"/></c:if>
@@ -47,7 +47,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Code Postale : </span>
   </div>
-  <input type="text" name="codePostale" class="form-control" placeholder="Code Postale" value="<c:catch var="exception"></c:catch>
+  <input type="text" pattern="[A-Ba-B0-9]" name="codePostale" class="form-control" placeholder="Code Postale" value="<c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${cas.code_postale }"/></c:if>" aria-label="codePostale" aria-describedby="basic-addon1">
 <c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${erreur_code_postale}"/></c:if>
@@ -57,7 +57,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Telephone : </span>
   </div>
-  <input type="text" name="telephone" class="form-control" placeholder="Telephone" value="<c:catch var="exception"></c:catch>
+  <input type="text" pattern="[A-Ba-B0-9]" name="telephone" class="form-control" placeholder="Telephone" value="<c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${cas.telephone }"/></c:if>" aria-label="telephone" aria-describedby="basic-addon1">
 <c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${erreur_telephone }"/></c:if>
@@ -68,7 +68,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Etat : </span>
   </div>
-  <input type="text" name="etat" class="form-control"  aria-label="etat" value="<c:catch var="exception"></c:catch>
+  <input type="text" pattern="[A-Ba-B0-9]" name="etat" class="form-control"  aria-label="etat" value="<c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${cas.etat }"/></c:if>" aria-describedby="basic-addon1">
   <c:catch var="exception"></c:catch>
 <c:if test="${exception==null}"><c:out value = "${erreur_etat }"/></c:if>

@@ -22,14 +22,14 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">ID cas</span> 
   </div>
-  <input type="text" disabled name="idcas" class="form-control" placeholder="${ cas.id_cas}" aria-label="id_cas" aria-describedby="basic-addon1">
+  <input type="text" pattern="[A-Ba-B0-9]" disabled name="idcas" class="form-control" placeholder="${ cas.id_cas}" aria-label="id_cas" aria-describedby="basic-addon1">
 </div> 
 
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Jour : </span>
   </div>
-  <input type="text" name="jour" class="form-control" placeholder="Jour" aria-label="jour" aria-describedby="basic-addon1">
+  <input type="text" pattern="[A-Ba-B0-9]" name="jour" class="form-control" placeholder="Jour" aria-label="jour" aria-describedby="basic-addon1">
 </div>
  
  
@@ -37,21 +37,21 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Mois : </span>
   </div>
-  <input type="text" name="mois" class="form-control" placeholder="Mois" aria-label="mois" aria-describedby="basic-addon1">
+  <input type="text" pattern="[A-Ba-B0-9]" name="mois" class="form-control" placeholder="Mois" aria-label="mois" aria-describedby="basic-addon1">
 </div>
 
  <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Annee : </span>
   </div>
-  <input type="text" name="annee" class="form-control" placeholder="Annee" aria-label="annee" aria-describedby="basic-addon1">
+  <input type="text" pattern="[A-Ba-B0-9]" name="annee" class="form-control" placeholder="Annee" aria-label="annee" aria-describedby="basic-addon1">
 </div>
 
  <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Resultat : </span>
   </div>
-  <input type="text" name="resultat" class="form-control" placeholder="Resultat" aria-label="resultat" aria-describedby="basic-addon1">
+  <input type="text" pattern="[A-Ba-B0-9]" name="resultat" class="form-control" placeholder="Resultat" aria-label="resultat" aria-describedby="basic-addon1">
 </div> 
 
  <input type="hidden" name="action" value="ajoutTest"/>

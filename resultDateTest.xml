@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="vmi460875" name="tests.DateTest" skipped="0" tests="1" time="0.0" timestamp="2021-01-21T14:57:01">
+<testsuite errors="0" failures="0" hostname="vmi460875" name="tests.DateTest" skipped="0" tests="10" time="0.006" timestamp="2021-01-21T15:14:12">
   <properties>
     <property name="sun.desktop" value="windows" />
     <property name="ant.library.dir" value="C:\Program Files\apache-ant-1.10.7-bin\apache-ant-1.10.7\lib" />
@@ -67,14 +67,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="java.class.version" value="55.0" />
   </properties>
-  <error message="tests.DateTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: tests.DateTest
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:398)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
+  <testcase classname="tests.DateTest" name="testDayIsInvalid" time="0.001" />
+  <testcase classname="tests.DateTest" name="testDateFeb28" time="0.0" />
+  <testcase classname="tests.DateTest" name="testMonthIsInvalid" time="0.0" />
+  <testcase classname="tests.DateTest" name="testYearIsInvalid" time="0.001" />
+  <testcase classname="tests.DateTest" name="testIdteste" time="0.0" />
+  <testcase classname="tests.DateTest" name="testDateFeb29__2011" time="0.0" />
+  <testcase classname="tests.DateTest" name="testDateFeb29__2012" time="0.0" />
+  <testcase classname="tests.DateTest" name="testDateIsValid__1" time="0.0" />
+  <testcase classname="tests.DateTest" name="testDateIsValid__2" time="0.001" />
+  <testcase classname="tests.DateTest" name="testDateIsValid__3" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

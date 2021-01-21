@@ -4,8 +4,8 @@
 		<delete dir="\build\classes\modele" />
 	</target>
 	<target name="compile" depends="clean">
-		<mkdir dir="\build\classes\modele" />
-		<javac destdir="\build\classes\modele" srcdir="src\modele" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
+		<mkdir dir="build\classes\modele" />
+		<javac destdir="build\classes\modele" srcdir="src\modele" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
 	</target>
 	<target name="tests" depends="compile">
 		<junit>
@@ -14,7 +14,7 @@
 				<pathelement location="C:\Users\Administrator\Documents\Java-workspace\Formation_Tests\triangle\lib\org.hamcrest.core_1.3.0.v20180420-1519.jar" />
 				<pathelement location="WebContent\WEB-INF\libjstl-1.2.jar" />
 				<pathelement location="WebContent\WEB-INF\mysql-connector-java-5.1.49.jar" />				
-				<pathelement location="${basedir}\build\classes" />
+				<pathelement location="build\classes" />
 			</classpath>
 			<formatter type="xml" />
 			<test name="tests.AdminTest" outfile="resultAdminTest" />

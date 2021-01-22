@@ -3,10 +3,11 @@
 	<target name="clean">
 		<delete dir="build\classes\modele" />
 		<delete dir="build\classes\tests" />
+		<delete dir="build\classes\utile" />
 	</target>
 	<target name="compile" depends="clean">
 		<mkdir dir="build\classes\modele" />
-		<javac destdir="build\classes" srcdir="src\modele;src\tests" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
+		<javac destdir="build\classes" srcdir="src\modele;src\tests;src\utile" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
 	</target>
 	<target name="tests" depends="compile">
 		<junit>

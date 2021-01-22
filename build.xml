@@ -5,7 +5,7 @@
 	</target>
 	<target name="compile" depends="clean">
 		<mkdir dir="build\classes\modele" />
-		<javac destdir="build\classes\modele" srcdir="src\modele" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
+		<javac destdir="build\classes" srcdir="src\modele;src\tests" classpath="C:\Users\Administrator\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar" />
 	</target>
 	<target name="tests" depends="compile">
 		<junit>
